@@ -5,7 +5,7 @@ class SalmonrunTimeTimer {
 
     // UTC 基準で残り時間を出す
     // テストしやすいように基準の日時を渡せるようにした
-    listup_next_STT(date = Date.now(), origin = 2, interval = 8) {
+    listup_next_STT(date = Date.now(), origin = 0, interval = 5) {
         var list = [];
         var base;
         if (this.time_offset) {
