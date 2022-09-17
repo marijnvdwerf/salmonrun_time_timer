@@ -20,10 +20,10 @@ class SalmonrunTimeTimer {
         var hours = base.getUTCHours();
 
         // iterate about hours ... 無限ループしないように上限を入れておく
-        for (let times = 1; list.length < 7 && times < 4; ++times) {
+        for (let times = 1; list.length < 12 && times < 4; ++times) {
             // in this hour
             // i が 8 なら次の時間へ、もしくは 7 件埋まれば終了
-            for (var i = period + 1; i <= 7 && list.length < 7; ++i) {
+            for (var i = period + 1; i <= 12 && list.length < 7; ++i) {
                 var minutes = origin + (i - 1) * interval;
                 var next_minutes = minutes + interval;
                 // 十分な間隔が取れない場合は仮でスキップするようにする
